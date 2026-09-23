@@ -1,4 +1,6 @@
-# Archivos compilados
+# Tikinet C++ - .gitignore
+
+# Archivos compilados y ejecutables
 *.exe
 *.o
 *.obj
@@ -6,16 +8,19 @@
 *.dll
 *.dylib
 *.so
+*.a
+*.bin
+*.app
 
-# Archivos generados por el programa
+# Archivos generados por el programa (Reportes)
+# Ignoramos todos los .txt para evitar subir reportes de escaneos o contrase√±as
 *.txt
-!README.md
-!LICENSE
-!Makefile
-
-# Archivos de depuraciÛn
-debug_output.txt
 *.log
+*.json
+*.csv
+
+# Archivos de depuraci√≥n
+debug_output.txt
 *.tmp
 *.temp
 
@@ -45,7 +50,7 @@ desktop.ini
 *.swo
 *~
 
-# Directorios de compilaciÛn
+# Directorios de compilaci√≥n
 build/
 bin/
 Debug/
